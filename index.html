@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Requirnment Mail</title>
+</head>
+<body>
+     <div class="container">
+        <form onsubmit="sendEmail(); return false;" id="form">
+            <h3>Send Your Requirnments</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email Id" required>
+            <input type="text" id="phone" placeholder="Your No" required>
+            <textarea id="message" id="msg" placeholder="How can we Help You"></textarea>
+            <button type="submit">Send</button>
+        </form>
+     </div>
+     <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+     <script src="index.js"></script>
+</body>
+</html>
